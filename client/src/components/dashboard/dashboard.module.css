@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #f5f9ff;
+}
+h2 {
+  font-family: "roboto";
+}
+.topsec {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topsec .too {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 119, 255);
+  font-weight: 400;
+}
+.topsec p {
+  font-size: 12px;
+  font-family: "roboto";
+  color: rgb(148, 148, 148);
+  text-align: center;
+  font-weight: 400;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px 25px;
+  background-color: white;
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.bottext {
+  font-weight: bold;
+  font-family: "roboto";
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bottext img {
+  width: 15px;
+  height: 15px;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  gap: 15px;
+  border-right: 1px solid gainsboro;
+  flex: 3;
+}
+.boxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.inHand {
+  display: flex;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: space-between;
+  font-family: "roboto";
+  width: 100%;
+  align-self: center;
+  border: 1px solid gainsboro;
+}
+.text1 {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 50px;
+  flex: 2;
+}
