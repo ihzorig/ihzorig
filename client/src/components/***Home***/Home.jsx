@@ -11,7 +11,7 @@ const Home = () => {
       <div className={Css.body}>
         <Navbar />
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/" element={<Dashboard />}></Route>
         </Routes>
       </div>
     </div>

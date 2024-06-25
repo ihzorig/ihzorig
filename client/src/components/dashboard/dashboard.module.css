@@ -2,8 +2,10 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  background-color: #f5f9ff;
+  background-color: #ffffff;
+  height: fit-content;
 }
 h2 {
   font-family: "roboto";
@@ -54,7 +56,7 @@ h2 {
 .first {
   display: flex;
   flex-direction: column;
-  padding: 30px 50px;
+  padding: 30px 50px 40px 50px;
   gap: 15px;
   border-right: 1px solid gainsboro;
   flex: 3;
@@ -89,4 +91,69 @@ h2 {
   gap: 20px;
   padding: 30px 50px;
   flex: 2;
+}
+.header {
+  display: flex;
+  background-color: #f5f9ff;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  /* width: 600px; */
+  flex: 1;
+  padding: 20px 30px 0px;
+  border: 1px solid gainsboro;
+  height: 300px;
+  border-radius: 15px;
+}
+.detailsHeader {
+  font-family: "roboto";
+}
+.charts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.charts .data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "roboto";
+  width: 100%;
+  font-weight: 400;
+}
+.data div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+h3 {
+  padding: 20px 0px;
+  border-bottom: 1px solid gainsboro;
+}
+.bots {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  padding: 30px 50px;
+}
+/* table .titles {
+  display: flex;
+  gap: 20px;
+} */
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: "roboto";
+  font-size: 14px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
 }
