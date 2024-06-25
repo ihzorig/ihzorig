@@ -29,24 +29,30 @@ const Sidebar = () => {
         </div>
         <div className={Css.menu}>
           <ul>
-            <Link className={Css.link} to="/login">
+            <Link className={Css.link} to="/home">
               <li>
                 <img className={Css.icon} src={dashboard} alt="" />
                 Хянах самбар
               </li>
             </Link>
-            <li>
-              <img className={Css.icon} src={company} alt="" />
-              Компани
-            </li>
-            <li>
-              <img className={Css.icon} src={userslogo} alt="" />
-              Хэрэглэгчийн бүртгэл
-            </li>
-            <li>
-              <img className={Css.icon} src={product} alt="" />
-              Бараа бүтээгдэхүүн бүртгэл
-            </li>
+            <Link className={Css.link} to="company">
+              <li>
+                <img className={Css.icon} src={company} alt="" />
+                Компани
+              </li>
+            </Link>
+            <Link className={Css.link} to="users">
+              <li>
+                <img className={Css.icon} src={userslogo} alt="" />
+                Хэрэглэгчийн бүртгэл
+              </li>
+            </Link>
+            <Link className={Css.link} to="product">
+              <li>
+                <img className={Css.icon} src={product} alt="" />
+                Бараа бүтээгдэхүүн бүртгэл
+              </li>
+            </Link>
             <li>
               <img className={Css.icon} src={transfer} alt="" />
               Шилжүүлэг

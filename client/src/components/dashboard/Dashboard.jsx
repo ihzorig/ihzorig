@@ -2,6 +2,7 @@ import React from "react";
 import Css from "./dashboard.module.css";
 import check from "../../assets/check.svg";
 import warning from "../../assets/warning.svg";
+import down from "../../assets/down.svg";
 import { PieChart, Pie, Cell, Tooltip } from "recharts";
 
 const Dashboard = () => {
@@ -218,6 +219,74 @@ const Dashboard = () => {
                 <td>
                   <a href="">Үзэх</a>
                 </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div className={Css.last}>
+        <div className={Css.last1}>
+          <div className={Css.lasttitle}>
+            <h3>Нийт худалдан авалтын дүн</h3>
+            <p style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              Сүүлийн 7 хоног <img className={Css.down} src={down} alt="" />
+            </p>
+          </div>
+          <div className={Css.total}>
+            <p className={Css.niit}>Нийт дүн</p>
+            <div style={{ display: "flex", alignItems: "end", gap: "5px" }}>
+              <p className={Css.totalPrice}>362.00</p>
+              <p style={{ fontFamily: "roboto" }}>сая</p>
+            </div>
+          </div>
+        </div>
+        <div className={Css.last2}>
+          <div className={Css.lasttitle}>
+            <h3>Хэрэглэгчийн мэдээлэл</h3>
+          </div>
+          <div className={Css.users}>
+            <table>
+              <tr className={Css.titles}>
+                <th>Компани</th>
+                <th>Албан тушаал</th>
+                <th>Овог</th>
+                <th>Нэр</th>
+                <th>Утас</th>
+                <th>И-мэйл</th>
+              </tr>
+              <tr>
+                <td>Santo Service LLC</td>
+                <td>
+                  <p>Админ</p>
+                </td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Santo Service LLC</td>
+                <td>Админ</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Santo Service LLC</td>
+                <td>Админ</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Santo Service LLC</td>
+                <td>Админ</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
               </tr>
             </table>
           </div>

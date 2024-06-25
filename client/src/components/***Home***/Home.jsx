@@ -4,6 +4,9 @@ import Css from "./home.module.css";
 import Navbar from "../navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "../dashboard/Dashboard";
+import Company from "../company/Company";
+import Users from "../users/Users";
+import Product from "../products/Product";
 const Home = () => {
   return (
     <div className={Css.container}>
@@ -12,6 +15,9 @@ const Home = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
+          <Route path="/users" element={<Users />}></Route>
+          <Route path="/company" element={<Company />}></Route>
+          <Route path="/product" element={<Product />}></Route>
         </Routes>
       </div>
     </div>
