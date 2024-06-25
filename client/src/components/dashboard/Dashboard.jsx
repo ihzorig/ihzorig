@@ -168,58 +168,62 @@ const Dashboard = () => {
           </div>
           <div>
             <table>
-              <tr className={Css.titles}>
-                <th>Компани</th>
-                <th>Хөрөнгийн төрөл</th>
-                <th>Хөрөнгийн нэр</th>
-                <th>Тоо ширхэг</th>
-                <th>Зураг</th>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Тавилга</td>
-                <td>Ширээ</td>
-                <td>22</td>
-                <td>
-                  <a href="">Үзэх</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Тавилга</td>
-                <td>Ширээ</td>
-                <td>22</td>
-                <td>
-                  <a href="">Үзэх</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Тавилга</td>
-                <td>Ширээ</td>
-                <td>22</td>
-                <td>
-                  <a href="">Үзэх</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Тавилга</td>
-                <td>Ширээ</td>
-                <td>22</td>
-                <td>
-                  <a href="">Үзэх</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Тавилга</td>
-                <td>Ширээ</td>
-                <td>22</td>
-                <td>
-                  <a href="">Үзэх</a>
-                </td>
-              </tr>
+              <thead>
+                <tr className={Css.titles}>
+                  <th>Компани</th>
+                  <th>Хөрөнгийн төрөл</th>
+                  <th>Хөрөнгийн нэр</th>
+                  <th>Тоо ширхэг</th>
+                  <th>Зураг</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Тавилга</td>
+                  <td>Ширээ</td>
+                  <td>22</td>
+                  <td>
+                    <a href="">Үзэх</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Тавилга</td>
+                  <td>Ширээ</td>
+                  <td>22</td>
+                  <td>
+                    <a href="">Үзэх</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Тавилга</td>
+                  <td>Ширээ</td>
+                  <td>22</td>
+                  <td>
+                    <a href="">Үзэх</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Тавилга</td>
+                  <td>Ширээ</td>
+                  <td>22</td>
+                  <td>
+                    <a href="">Үзэх</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Тавилга</td>
+                  <td>Ширээ</td>
+                  <td>22</td>
+                  <td>
+                    <a href="">Үзэх</a>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -244,50 +248,54 @@ const Dashboard = () => {
           <div className={Css.lasttitle}>
             <h3>Хэрэглэгчийн мэдээлэл</h3>
           </div>
-          <div className={Css.users}>
+          <div>
             <table>
-              <tr className={Css.titles}>
-                <th>Компани</th>
-                <th>Албан тушаал</th>
-                <th>Овог</th>
-                <th>Нэр</th>
-                <th>Утас</th>
-                <th>И-мэйл</th>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>
-                  <p>Админ</p>
-                </td>
-                <td>Оюундалай</td>
-                <td>Ихзориг</td>
-                <td>94442911</td>
-                <td>karaylaihzorig@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Админ</td>
-                <td>Оюундалай</td>
-                <td>Ихзориг</td>
-                <td>94442911</td>
-                <td>karaylaihzorig@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Админ</td>
-                <td>Оюундалай</td>
-                <td>Ихзориг</td>
-                <td>94442911</td>
-                <td>karaylaihzorig@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Santo Service LLC</td>
-                <td>Админ</td>
-                <td>Оюундалай</td>
-                <td>Ихзориг</td>
-                <td>94442911</td>
-                <td>karaylaihzorig@gmail.com</td>
-              </tr>
+              <thead>
+                <tr className={Css.titles}>
+                  <th>Компани</th>
+                  <th>Албан тушаал</th>
+                  <th>Овог</th>
+                  <th>Нэр</th>
+                  <th>Утас</th>
+                  <th>И-мэйл</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>
+                    <p>Админ</p>
+                  </td>
+                  <td>Оюундалай</td>
+                  <td>Ихзориг</td>
+                  <td>94442911</td>
+                  <td>karaylaihzorig@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Админ</td>
+                  <td>Оюундалай</td>
+                  <td>Ихзориг</td>
+                  <td>94442911</td>
+                  <td>karaylaihzorig@gmail.com</td>
+                </tr>{" "}
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Админ</td>
+                  <td>Оюундалай</td>
+                  <td>Ихзориг</td>
+                  <td>94442911</td>
+                  <td>karaylaihzorig@gmail.com</td>
+                </tr>{" "}
+                <tr>
+                  <td>Santo Service LLC</td>
+                  <td>Админ</td>
+                  <td>Оюундалай</td>
+                  <td>Ихзориг</td>
+                  <td>94442911</td>
+                  <td>karaylaihzorig@gmail.com</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>

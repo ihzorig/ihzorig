@@ -6,6 +6,7 @@ import Delete from "./assets/delete.svg";
 import add from "./assets/add.svg";
 import search from "../../assets/search.svg";
 import down from "../../assets/down.svg";
+import edit from "./assets/edit.svg";
 
 const Users = () => {
   const [showPasswords, setShowPasswords] = useState(false);
@@ -48,7 +49,7 @@ const Users = () => {
             <p className={Css.adduser}>Хэрэглэгч бүртгэх</p>
           </div>
         </div>
-        <table className={Css.counttable}>
+        <table>
           <thead>
             <tr>
               <th>№</th>
@@ -86,6 +87,7 @@ const Users = () => {
                     gap: "5px",
                     width: "100%",
                     justifyContent: "center",
+                    marginTop: "6px",
                   }}
                 >
                   {" "}
@@ -98,11 +100,353 @@ const Users = () => {
                     gap: "5px",
                     width: "100%",
                     justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
+                  Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
+                </div>
+              </td>
+            </tr>{" "}
+            <tr>
+              <td>1</td>
+              <td>Santo services LLC</td>
+              <td>Admin</td>
+              <td>Оюундалай</td>
+              <td>Ихзориг</td>
+              <td>94442911</td>
+              <td>karaylaihzorig@gmail.com</td>
+              <td>admin</td>
+              <td>admin</td>
+              <td
+                style={{
+                  width: "200px",
+                  height: "fit-content",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
                   }}
                 >
                   {" "}
-                  <img width={12} src={add} alt="" />
+                  <img width={12} src={Delete} alt="" />
+                  Устгах
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
                   Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
+                </div>
+              </td>
+            </tr>{" "}
+            <tr>
+              <td>1</td>
+              <td>Santo services LLC</td>
+              <td>Admin</td>
+              <td>Оюундалай</td>
+              <td>Ихзориг</td>
+              <td>94442911</td>
+              <td>karaylaihzorig@gmail.com</td>
+              <td>admin</td>
+              <td>admin</td>
+              <td
+                style={{
+                  width: "200px",
+                  height: "fit-content",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  {" "}
+                  <img width={12} src={Delete} alt="" />
+                  Устгах
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
+                  Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
+                </div>
+              </td>
+            </tr>{" "}
+            <tr>
+              <td>1</td>
+              <td>Santo services LLC</td>
+              <td>Admin</td>
+              <td>Оюундалай</td>
+              <td>Ихзориг</td>
+              <td>94442911</td>
+              <td>karaylaihzorig@gmail.com</td>
+              <td>admin</td>
+              <td>admin</td>
+              <td
+                style={{
+                  width: "200px",
+                  height: "fit-content",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  {" "}
+                  <img width={12} src={Delete} alt="" />
+                  Устгах
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
+                  Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Santo services LLC</td>
+              <td>Admin</td>
+              <td>Оюундалай</td>
+              <td>Ихзориг</td>
+              <td>94442911</td>
+              <td>karaylaihzorig@gmail.com</td>
+              <td>admin</td>
+              <td>admin</td>
+              <td
+                style={{
+                  width: "200px",
+                  height: "fit-content",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  {" "}
+                  <img width={12} src={Delete} alt="" />
+                  Устгах
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
+                  Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Santo services LLC</td>
+              <td>Admin</td>
+              <td>Оюундалай</td>
+              <td>Ихзориг</td>
+              <td>94442911</td>
+              <td>karaylaihzorig@gmail.com</td>
+              <td>admin</td>
+              <td>admin</td>
+              <td
+                style={{
+                  width: "200px",
+                  height: "fit-content",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  {" "}
+                  <img width={12} src={Delete} alt="" />
+                  Устгах
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
+                  Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Santo services LLC</td>
+              <td>Admin</td>
+              <td>Оюундалай</td>
+              <td>Ихзориг</td>
+              <td>94442911</td>
+              <td>karaylaihzorig@gmail.com</td>
+              <td>admin</td>
+              <td>admin</td>
+              <td
+                style={{
+                  width: "200px",
+                  height: "fit-content",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  {" "}
+                  <img width={12} src={Delete} alt="" />
+                  Устгах
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.addimg} width={12} src={add} alt="" />
+                  Эрх нэмэх
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    justifyContent: "center",
+                    marginTop: "6px",
+                  }}
+                >
+                  <img className={Css.editimg} width={15} src={edit} alt="" />
+                  Засах
                 </div>
               </td>
             </tr>

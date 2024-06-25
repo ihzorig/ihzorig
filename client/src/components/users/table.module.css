@@ -24,7 +24,7 @@ table {
 .header {
   display: flex;
   width: 100%;
-  padding: 50px 0px 20px 0px;
+  padding: 30px 0px 20px 0px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -40,6 +40,9 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.addimg {
+  transform: rotate(45deg);
 }
 .option1,
 .option2 {
@@ -112,6 +115,22 @@ h1 {
 }
 .useradj p {
   font-family: "roboto";
+  border: 1px solid #fd6868;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 100%;
+  padding: 2px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 0px;
 }
 .adduser {
   background-color: #fd6868;
@@ -125,7 +144,9 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tablebody {
-  border: 1px solid rgb(180, 180, 180);
+  border: 1px solid #eeeeee;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   height: 100%;
   border-radius: 15px;
+  overflow: scroll;
 }
