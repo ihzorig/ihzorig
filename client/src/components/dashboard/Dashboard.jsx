@@ -15,7 +15,7 @@ const Dashboard = () => {
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "red"];
 
   return (
-    <div className={Css.container}>
+    <div className={Css.containers}>
       <div className={Css.header}>
         <div className={Css.first}>
           <div>

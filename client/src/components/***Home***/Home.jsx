@@ -7,6 +7,8 @@ import Dashboard from "../dashboard/Dashboard";
 import Company from "../company/Company";
 import Users from "../users/Users";
 import Product from "../products/Product";
+import Transfer from "../transfer/Transfer";
+import Action from "../action/Action";
 const Home = () => {
   return (
     <div className={Css.container}>
@@ -18,6 +20,8 @@ const Home = () => {
           <Route path="/users" element={<Users />}></Route>
           <Route path="/company" element={<Company />}></Route>
           <Route path="/product" element={<Product />}></Route>
+          <Route path="/transfer" element={<Transfer />}></Route>
+          <Route path="/action" element={<Action />}></Route>
         </Routes>
       </div>
     </div>

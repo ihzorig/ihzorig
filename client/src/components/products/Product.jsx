@@ -55,7 +55,7 @@ const Product = () => {
           <table border="1">
             <thead>
               <tr>
-                <th>
+                <th className={Css.th}>
                   <div className={Css.columnheader}>
                     <span>№</span>
                   </div>
@@ -128,6 +128,11 @@ const Product = () => {
                 <td>karaylaihzorig@gmail.com</td>
                 <td>Admin</td>
                 <td>Admin</td>
+                <td>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laborum consequuntur rerum ut temporibus? Sed, nulla error nam
+                  eos voluptatem distinctio!
+                </td>
                 <td
                   style={{
                     width: "200px",
@@ -183,6 +188,11 @@ const Product = () => {
                 <td>karaylaihzorig@gmail.com</td>
                 <td>Admin</td>
                 <td>Admin</td>
+                <td>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laborum consequuntur rerum ut temporibus? Sed, nulla error nam
+                  eos voluptatem distinctio!
+                </td>
                 <td
                   style={{
                     width: "200px",

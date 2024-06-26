@@ -53,14 +53,18 @@ const Sidebar = () => {
                 Бараа бүтээгдэхүүн бүртгэл
               </li>
             </Link>
-            <li>
-              <img className={Css.icon} src={transfer} alt="" />
-              Шилжүүлэг
-            </li>
-            <li>
-              <img className={Css.icon} src={Del} alt="" />
-              Акт{" "}
-            </li>
+            <Link className={Css.link} to="transfer">
+              <li>
+                <img className={Css.icon} src={transfer} alt="" />
+                Шилжүүлэг
+              </li>
+            </Link>
+            <Link className={Css.link} to="action">
+              <li>
+                <img className={Css.icon} src={Del} alt="" />
+                Акт{" "}
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

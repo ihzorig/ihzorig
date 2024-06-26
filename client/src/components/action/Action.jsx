@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Css from "./table.module.css";
+import Css from "../users/table.module.css";
 import mine from "./assets/mine.svg";
 import group from "./assets/group.svg";
 import Delete from "./assets/delete.svg";
@@ -10,7 +10,7 @@ import edit from "./assets/edit.svg";
 import left from "./assets/left.svg";
 import filter from "./assets/filter.svg";
 
-const Users = () => {
+const Action = () => {
   const [showPasswords, setShowPasswords] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -22,15 +22,15 @@ const Users = () => {
   return (
     <div className={Css.container}>
       <div className={Css.header}>
-        <h1>Хэрэглэгчид</h1>
+        <h1>Акталсан бараа</h1>
         <div className={Css.option}>
           <div className={Css.option1}>
             <img style={{ width: "20px" }} src={mine} alt="" />
-            Миний бүртгэл
+            Миний акталсан бараа
           </div>
           <div className={Css.option2}>
             <img style={{ width: "20px" }} src={group} alt="" />
-            Бүх бүртгэл{" "}
+            Бүх акталсан бараа{" "}
           </div>
         </div>
       </div>
@@ -42,13 +42,13 @@ const Users = () => {
               <input className={Css.input} type="text" placeholder="Хайх..." />
             </div>
             <div className={Css.filters}>
-              <p>Бүх Хэрэглэгчид</p>
+              <p>Бүх Бараа</p>
               <img style={{ width: "11px" }} src={down} alt="" />
             </div>
           </div>
           <div className={Css.useradj}>
-            <p>Хэрэглэгчийн дэлгэрэнгүй</p>
-            <div className={Css.adduser}>Хэрэглэгч бүртгэх</div>
+            <p>Актыг дэлгэрэнгүй</p>
+            <div className={Css.adduser}>Актыг Засах</div>
           </div>
         </div>
         <div className={Css.table}>
@@ -60,7 +60,7 @@ const Users = () => {
                     <span>№</span>
                   </div>
                 </th>
-                <th className={Css.px}>
+                <th>
                   <div className={Css.columnheader}>
                     <span>Компани</span>
                     <img width={15} src={filter} alt="Email" />
@@ -74,45 +74,46 @@ const Users = () => {
                 </th>
                 <th>
                   <div className={Css.columnheader}>
-                    <span>Овог</span>
-                    <img width={15} src={filter} alt="Email" />
-                  </div>
-                </th>
-                <th>
-                  <div className={Css.columnheader}>
                     <span>Нэр</span>
                     <img width={15} src={filter} alt="Email" />
                   </div>
                 </th>
-                <th className={Css.px}>
-                  <div className={Css.columnheader}>
-                    <span>Утас</span>
-                  </div>
-                </th>
                 <th>
                   <div className={Css.columnheader}>
-                    <span>Мэйл хаяг</span>
-                  </div>
-                </th>
-                <th className={Css.px}>
-                  <div className={Css.columnheader}>
-                    <span>Эрх олголт</span>
+                    <span>Акталсан огноо</span>
                     <img width={15} src={filter} alt="Email" />
                   </div>
                 </th>
                 <th>
                   <div className={Css.columnheader}>
-                    <span>Нэвтрэх нэр</span>
+                    <span>Актын тушаалын дугаар</span>
+                    <img width={15} src={filter} alt="Email" />
                   </div>
                 </th>
                 <th>
                   <div className={Css.columnheader}>
-                    <span>Үйлдэл</span>
+                    <span>Актын тушаалын огноо</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Актын тушаалын зураг</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Эд хөрөнгийн Зураг</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Үнэлгээ</span>
                   </div>
                 </th>
               </tr>
             </thead>
-            <tbody className={Css.customtbody}>
+            <tbody>
               <tr>
                 <td>1</td>
                 <td>Santo service LLC</td>
@@ -121,52 +122,9 @@ const Users = () => {
                 <td>Ихзориг</td>
                 <td>94442911</td>
                 <td>karaylaihzorig@gmail.com</td>
-                <td>Admin</td>
-                <td>Admin</td>
-                <td
-                  style={{
-                    width: "200px",
-                    height: "fit-content",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      width: "100%",
-                      justifyContent: "center",
-                      marginTop: "6px",
-                    }}
-                  >
-                    {" "}
-                    <img width={12} src={Delete} alt="" />
-                    Устгах
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      width: "100%",
-                      justifyContent: "center",
-                      marginTop: "6px",
-                    }}
-                  >
-                    <img className={Css.addimg} width={12} src={add} alt="" />
-                    Засах
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      width: "100%",
-                      justifyContent: "center",
-                      marginTop: "6px",
-                    }}
-                  >
-                    <img className={Css.addimg} width={12} src={add} alt="" />
-                    Эрх нэмэх
-                  </div>
-                </td>
+                <td>Зураг харах</td>
+                <td>Зураг харах</td>
+                <td>150.0</td>
               </tr>
               <tr>
                 <td>2</td>
@@ -176,52 +134,9 @@ const Users = () => {
                 <td>Ихзориг</td>
                 <td>94442911</td>
                 <td>karaylaihzorig@gmail.com</td>
-                <td>Admin</td>
-                <td>Admin</td>
-                <td
-                  style={{
-                    width: "200px",
-                    height: "fit-content",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      width: "100%",
-                      justifyContent: "center",
-                      marginTop: "6px",
-                    }}
-                  >
-                    {" "}
-                    <img width={12} src={Delete} alt="" />
-                    Устгах
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      width: "100%",
-                      justifyContent: "center",
-                      marginTop: "6px",
-                    }}
-                  >
-                    <img className={Css.addimg} width={12} src={add} alt="" />
-                    Засах
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "5px",
-                      width: "100%",
-                      justifyContent: "center",
-                      marginTop: "6px",
-                    }}
-                  >
-                    <img className={Css.addimg} width={12} src={add} alt="" />
-                    Эрх нэмэх
-                  </div>
-                </td>
+                <td>Зураг харах</td>
+                <td>Зураг харах</td>
+                <td>150.0</td>
               </tr>
               {/* Additional rows here */}
             </tbody>
@@ -238,4 +153,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default Action;

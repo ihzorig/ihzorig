@@ -10,6 +10,9 @@
   height: 90%;
   overflow: scroll;
   overflow-x: scroll;
+  scrollbar-color: #fd6868 #e0e0e0;
+  scrollbar-width: thin;
+  scrollbar-width: thin;
 }
 .container {
   width: 100%;
@@ -128,13 +131,7 @@ h1 {
   background-color: white;
   color: black;
 }
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 10px;
-}
-::-webkit-scrollbar {
-  width: 0px;
-}
+
 .adduser {
   background-color: #fd6868;
   color: white;
@@ -164,9 +161,17 @@ th {
   max-width: 200px;
 }
 
-table tbody tr {
+/* table tbody tr {
   height: 50px;
 }
 .customtbody tr {
   height: 50px;
+} */
+.th {
+  min-width: 50px;
+  max-width: 50px;
+}
+.px {
+  min-width: 150px;
+  max-width: 150px;
 }

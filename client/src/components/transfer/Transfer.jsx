@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import Css from "../users/table.module.css";
 import mine from "./assets/mine.svg";
 import group from "./assets/group.svg";
+import Delete from "./assets/delete.svg";
+import add from "./assets/add.svg";
 import search from "../../assets/search.svg";
 import down from "../../assets/down.svg";
+import edit from "./assets/edit.svg";
 import left from "./assets/left.svg";
+import filter from "./assets/filter.svg";
 
-const Company = () => {
+const Transfer = () => {
   const [showPasswords, setShowPasswords] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -18,15 +22,15 @@ const Company = () => {
   return (
     <div className={Css.container}>
       <div className={Css.header}>
-        <h1>Компани</h1>
+        <h1>Шилжүүлэг</h1>
         <div className={Css.option}>
           <div className={Css.option1}>
             <img style={{ width: "20px" }} src={mine} alt="" />
-            Миний бүртгэл
+            Миний Шилжүүлэг
           </div>
           <div className={Css.option2}>
             <img style={{ width: "20px" }} src={group} alt="" />
-            Бүх бүртгэл{" "}
+            Бүх Шилжүүлэг{" "}
           </div>
         </div>
       </div>
@@ -38,13 +42,13 @@ const Company = () => {
               <input className={Css.input} type="text" placeholder="Хайх..." />
             </div>
             <div className={Css.filters}>
-              <p>Бүх Компаниуд </p>
+              <p>Бүх Бараа</p>
               <img style={{ width: "11px" }} src={down} alt="" />
             </div>
           </div>
           <div className={Css.useradj}>
-            <p>Компаниудын дэлгэрэнгүй</p>
-            <div className={Css.adduser}>Компаниудын бүртгэх</div>
+            <p>Шилжүүлэгийн дэлгэрэнгүй</p>
+            <div className={Css.adduser}>Шилжүүлэгийг Засах</div>
           </div>
         </div>
         <div className={Css.table}>
@@ -56,28 +60,76 @@ const Company = () => {
                     <span>№</span>
                   </div>
                 </th>
-                <th className={Css.px}>
+                <th>
                   <div className={Css.columnheader}>
                     <span>Компани</span>
+                    <img width={15} src={filter} alt="Email" />
                   </div>
                 </th>
                 <th>
                   <div className={Css.columnheader}>
                     <span>Албан тушаал</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Нэр</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Шилжүүлэгийн огноо</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Тушаалын дугаар</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Тушаалын огноо</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Тушаалын зураг</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Эд хөрөнгийн Зураг</span>
                   </div>
                 </th>
               </tr>
             </thead>
-            <tbody className={Css.customtbody}>
+            <tbody>
               <tr>
                 <td>1</td>
                 <td>Santo service LLC</td>
                 <td>Admin</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+                <td>Зураг харах</td>
+                <td>Зураг харах</td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Santo service LLC</td>
                 <td>Admin</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+                <td>Зураг харах</td>
+                <td>Зураг харах</td>
               </tr>
               {/* Additional rows here */}
             </tbody>
@@ -94,4 +146,4 @@ const Company = () => {
   );
 };
 
-export default Company;
+export default Transfer;
