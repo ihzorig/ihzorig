@@ -1,32 +1,15 @@
-table,
-td {
-  border: 1px solid #e0e0e0;
-  padding: 10px 10px;
-  text-align: center;
-  font-family: "roboto";
-  font-size: 14px;
-  font-weight: 400;
-}
-table th {
-  border: 1px solid #e0e0e0;
-  padding: 20px 15px;
-  text-align: center;
-  font-family: "roboto";
-  font-size: 14px;
-  font-weight: 400;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-}
 .header {
   display: flex;
   width: 100%;
   padding: 30px 0px 20px 0px;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.table {
+  width: 1480px;
+  height: 90%;
+  overflow: scroll;
+  overflow-x: scroll;
 }
 .container {
   width: 100%;
@@ -56,7 +39,20 @@ h1 {
   gap: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+.tablefooter {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: end;
+  padding: 5px 10px;
+  gap: 10px;
+  font-family: "roboto";
+  font-size: 14px;
+  margin-top: 8px;
+}
+.gg {
+  transform: rotate(180deg);
+}
 .search {
   display: flex;
   width: 200px;
@@ -115,16 +111,23 @@ h1 {
 }
 .useradj p {
   font-family: "roboto";
-  border: 1px solid #fd6868;
+  /* border: 1px solid #fd6868; */
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  color: white;
+  background-color: #7e7e7e;
   height: 100%;
+  transition: 0.6s;
   padding: 2px 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.useradj p:hover {
+  border: 1px solid #fd6868;
+  background-color: white;
+  color: black;
+}
 ::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 10px;
@@ -135,6 +138,7 @@ h1 {
 .adduser {
   background-color: #fd6868;
   color: white;
+  font-family: "roboto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,5 +152,21 @@ h1 {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   height: 100%;
   border-radius: 15px;
-  overflow: scroll;
+}
+.columnheader {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-self: center;
+}
+th {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+table tbody tr {
+  height: 50px;
+}
+.customtbody tr {
+  height: 50px;
 }

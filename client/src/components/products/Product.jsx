@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Css from "../users/table.module.css";
 import mine from "./assets/mine.svg";
 import group from "./assets/group.svg";
@@ -7,11 +7,22 @@ import add from "./assets/add.svg";
 import search from "../../assets/search.svg";
 import down from "../../assets/down.svg";
 import edit from "./assets/edit.svg";
+import left from "./assets/left.svg";
+import filter from "./assets/filter.svg";
+
 const Product = () => {
+  const [showPasswords, setShowPasswords] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPasswords(!showPasswords);
+  };
+
+  // Assuming you have a user object defined somewhere
+
   return (
     <div className={Css.container}>
       <div className={Css.header}>
-        <h1>Бараа бүтээгдэхүүн</h1>
+        <h1>Бараа бүртгэл</h1>
         <div className={Css.option}>
           <div className={Css.option1}>
             <img style={{ width: "20px" }} src={mine} alt="" />
@@ -36,83 +47,197 @@ const Product = () => {
             </div>
           </div>
           <div className={Css.useradj}>
-            <p>Бараа засах</p>
-            <p className={Css.adduser}>Бараа бүртгэх</p>
+            <p>Барааны дэлгэрэнгүй</p>
+            <div className={Css.adduser}>Хэрэглэгч бүртгэх</div>
           </div>
         </div>
-        <table className={Css.counttable}>
-          <thead>
-            <tr>
-              <th>№</th>
-              <th>Компани</th>
-              <th>Албан тушаал</th>
-              <th>Овог</th>
-              <th>Нэр</th>
-              <th>Утас</th>
-              <th>Мэйл хаяг</th>
-              <th>Эрх олголт</th>
-              <th>Нэвтрэх нэр</th>
-              <th>Үйлдэл</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Santo services LLC</td>
-              <td>Admin</td>
-              <td>Оюундалай</td>
-              <td>Ихзориг</td>
-              <td>94442911</td>
-              <td>karaylaihzorig@gmail.com</td>
-              <td>admin</td>
-              <td>admin</td>
-              <td
-                style={{
-                  width: "200px",
-                  height: "fit-content",
-                }}
-              >
-                <div
+        <div className={Css.table}>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>№</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Компани</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Хөрөнгийн төрөл</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Хөрөнгийн нэр</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Ашиглах хугацаа</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Хүлээж авсан огноо</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Тоо ширхэг</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Байршил</span>
+                    <img width={15} src={filter} alt="Email" />
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Зураг</span>
+                  </div>
+                </th>
+                <th style={{ width: "300px" }}>
+                  <div className={Css.columnheader}>
+                    <span>Тайлбар</span>
+                  </div>
+                </th>
+                <th>
+                  <div className={Css.columnheader}>
+                    <span>Үйлдэл</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Santo service LLC</td>
+                <td>Admin</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+                <td>Admin</td>
+                <td>Admin</td>
+                <td
                   style={{
-                    display: "flex",
-                    gap: "5px",
-                    width: "100%",
-                    justifyContent: "center",
-                    marginTop: "6px",
+                    width: "200px",
+                    height: "fit-content",
                   }}
                 >
-                  {" "}
-                  <img width={12} src={Delete} alt="" />
-                  Устгах
-                </div>
-                <div
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    {" "}
+                    <img width={12} src={Delete} alt="" />
+                    Устгах
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <img className={Css.addimg} width={12} src={add} alt="" />
+                    Засах
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <img className={Css.addimg} width={12} src={add} alt="" />
+                    Эрх нэмэх
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Santo service LLC</td>
+                <td>Admin</td>
+                <td>Оюундалай</td>
+                <td>Ихзориг</td>
+                <td>94442911</td>
+                <td>karaylaihzorig@gmail.com</td>
+                <td>Admin</td>
+                <td>Admin</td>
+                <td
                   style={{
-                    display: "flex",
-                    gap: "5px",
-                    width: "100%",
-                    justifyContent: "center",
-                    marginTop: "6px",
+                    width: "200px",
+                    height: "fit-content",
                   }}
                 >
-                  <img className={Css.addimg} width={12} src={add} alt="" />
-                  Эрх нэмэх
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    gap: "5px",
-                    width: "100%",
-                    justifyContent: "center",
-                    marginTop: "6px",
-                  }}
-                >
-                  <img className={Css.editimg} width={15} src={edit} alt="" />
-                  Засах
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    {" "}
+                    <img width={12} src={Delete} alt="" />
+                    Устгах
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <img className={Css.addimg} width={12} src={add} alt="" />
+                    Засах
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <img className={Css.addimg} width={12} src={add} alt="" />
+                    Эрх нэмэх
+                  </div>
+                </td>
+              </tr>
+              {/* Additional rows here */}
+            </tbody>
+          </table>
+        </div>
+        <div className={Css.tablefooter}>
+          <img width={15} src={left} alt="" />
+          <p>Хуудас </p>
+          <p>1/12</p>
+          <img className={Css.gg} width={15} src={left} alt="" />
+        </div>
       </div>
     </div>
   );
