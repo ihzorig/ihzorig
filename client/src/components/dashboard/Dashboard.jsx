@@ -166,7 +166,7 @@ const Dashboard = () => {
           <div className={Css.detailsHeader}>
             <h3>Сүүлийн худалдан авалтууд </h3>
           </div>
-          <div>
+          <div className={Css.tables}>
             <table>
               <thead>
                 <tr className={Css.titles}>
@@ -248,7 +248,7 @@ const Dashboard = () => {
           <div className={Css.lasttitle}>
             <h3>Хэрэглэгчийн мэдээлэл</h3>
           </div>
-          <div>
+          <div className={Css.tables}>
             <table>
               <thead>
                 <tr className={Css.titles}>
