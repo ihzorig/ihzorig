@@ -5,6 +5,22 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+#company {
+  display: flex;
+  gap: 20px;
+  height: 89%;
+}
+#company #div {
+  flex: 1;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #fd6868 #e0e0e0;
+  scrollbar-width: thin;
+  scrollbar-width: thin;
+  padding: 20px;
+}
+
 .table {
   width: 1480px;
   height: 90%;
@@ -159,8 +175,22 @@ h1 {
 th {
   min-width: 200px;
   max-width: 200px;
+  min-height: 50px;
+  max-height: 50px;
 }
-
+thead {
+  height: 50px;
+}
+thead th {
+  color: #1b1b1b;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-family: "roboto";
+}
+td {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
 /* table tbody tr {
   height: 50px;
 }

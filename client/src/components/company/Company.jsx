@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Css from "../users/table.module.css";
+import style from "./register.module.css";
 import mine from "./assets/mine.svg";
 import group from "./assets/group.svg";
 import search from "../../assets/search.svg";
@@ -18,7 +19,7 @@ const Company = () => {
   return (
     <div className={Css.container}>
       <div className={Css.header}>
-        <h1>Компани</h1>
+        <h1>Компани болон Оффис</h1>
         <div className={Css.option}>
           <div className={Css.option1}>
             <img style={{ width: "20px" }} src={mine} alt="" />
@@ -43,45 +44,83 @@ const Company = () => {
             </div>
           </div>
           <div className={Css.useradj}>
-            <p>Компаниудын дэлгэрэнгүй</p>
-            <div className={Css.adduser}>Компаниудын бүртгэх</div>
+            <div className={Css.adduser}>Компани бүртгэх</div>
+            <div className={Css.adduser}>Оффис бүртгэх</div>
           </div>
         </div>
-        <div className={Css.table}>
-          <table border="1">
-            <thead>
-              <tr>
-                <th className={Css.th}>
-                  <div className={Css.columnheader}>
-                    <span>№</span>
-                  </div>
-                </th>
-                <th className={Css.px}>
-                  <div className={Css.columnheader}>
-                    <span>Компани</span>
-                  </div>
-                </th>
-                <th>
-                  <div className={Css.columnheader}>
-                    <span>Албан тушаал</span>
-                  </div>
-                </th>
-              </tr>
-            </thead>
-            <tbody className={Css.customtbody}>
-              <tr>
-                <td>1</td>
-                <td>Santo service LLC</td>
-                <td>Admin</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Santo service LLC</td>
-                <td>Admin</td>
-              </tr>
-              {/* Additional rows here */}
-            </tbody>
-          </table>
+        <div id={Css.company}>
+          <div id={Css.div}>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th className={Css.th}>
+                    <div className={Css.columnheader}>
+                      <span>№</span>
+                    </div>
+                  </th>
+                  <th className={Css.px}>
+                    <div className={Css.columnheader}>
+                      <span>Компани</span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className={Css.columnheader}>
+                      <span>Регистрийн дугаар</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className={Css.customtbody}>
+                <tr>
+                  <td>1</td>
+                  <td>Santo service LLC</td>
+                  <td>Admin</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Santo service LLC</td>
+                  <td>Admin</td>
+                </tr>
+                {/* Additional rows here */}
+              </tbody>
+            </table>
+          </div>
+          <div className={style.company} id={Css.div}>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th className={Css.th}>
+                    <div className={Css.columnheader}>
+                      <span>№</span>
+                    </div>
+                  </th>
+                  <th className={Css.px}>
+                    <div className={Css.columnheader}>
+                      <span>Компани</span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className={Css.columnheader}>
+                      <span>Оффис</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className={Css.customtbody}>
+                <tr>
+                  <td>1</td>
+                  <td>Santo service LLC</td>
+                  <td>211-1-1020</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Santo service LLC</td>
+                  <td>211-1-1020</td>
+                </tr>
+                {/* Additional rows here */}
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className={Css.tablefooter}>
           <img width={15} src={left} alt="" />

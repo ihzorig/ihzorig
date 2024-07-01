@@ -15,7 +15,7 @@ const Dashboard = () => {
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "red"];
 
   return (
-    <div className={Css.containers}>
+    <div className={Css.container}>
       <div className={Css.header}>
         <div className={Css.first}>
           <div>
@@ -162,11 +162,11 @@ const Dashboard = () => {
             </PieChart>
           </div>
         </div>
-        <div className={Css.details}>
+        <div className={Css.details1}>
           <div className={Css.detailsHeader}>
             <h3>Сүүлийн худалдан авалтууд </h3>
           </div>
-          <div className={Css.tables}>
+          <div className={Css.tables1}>
             <table>
               <thead>
                 <tr className={Css.titles}>
@@ -278,7 +278,7 @@ const Dashboard = () => {
                   <td>Ихзориг</td>
                   <td>94442911</td>
                   <td>karaylaihzorig@gmail.com</td>
-                </tr>{" "}
+                </tr>
                 <tr>
                   <td>Santo Service LLC</td>
                   <td>Админ</td>
@@ -286,7 +286,7 @@ const Dashboard = () => {
                   <td>Ихзориг</td>
                   <td>94442911</td>
                   <td>karaylaihzorig@gmail.com</td>
-                </tr>{" "}
+                </tr>
                 <tr>
                   <td>Santo Service LLC</td>
                   <td>Админ</td>

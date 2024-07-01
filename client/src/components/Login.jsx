@@ -14,49 +14,48 @@ const Login = () => {
     try {
       const response = await axios.post(
         "http://localhost:2030/api/v1/auth/login",
-        {
-          email: email,
-          password: password,
-        }
+        { email, password }
       );
 
-      console.log("Response from server:", response.data); // Log response for debugging
-
-      if (response.data.success) {
-        navigate("/home"); // Navigate on successful login
+      if (response.data) {
+        localStorage.setItem("token", response.data.token);
+        navigate("/home");
+      } else {
+        setError(response.data.error); // Update error state
       }
-      setError(response.data.error); // Set error message
     } catch (error) {
-      console.error("Error during login request:", error);
-      setError("Internetiin asuudal garlaa");
+      setError(error.response.data.error);
     }
   };
-  return (
-    <div className={css.background}>
-      <div className={css.shape}></div>
-      <div className={css.shape}></div>
 
-      <form onSubmit={handleSubmit}>
-        <h3>Login Here</h3>
-        <label htmlFor="username">Email</label>
-        <input
-          type="text"
-          placeholder="Email"
-          className={css.username}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          className={css.password}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        {error && <p className={css.error}>{error}</p>}{" "}
-        <button type="submit">Log In</button>
-      </form>
+  return (
+    <div className={css.container}>
+      <div className={css.background}>
+        <div className={css.shape}></div>
+        <div className={css.shape}></div>
+
+        <form onSubmit={handleSubmit}>
+          <h3>Login Here</h3>
+          <label htmlFor="username">Email</label>
+          <input
+            type="text"
+            placeholder="Email"
+            className={css.username}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            className={css.password}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <p className={css.error}>{error}</p>
+          <button type="submit">Log In</button>
+        </form>
+      </div>
     </div>
   );
 };

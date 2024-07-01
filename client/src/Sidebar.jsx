@@ -12,21 +12,23 @@ const Sidebar = () => {
   return (
     <div>
       <div className={Css.sidebar}>
-        <div className={Css.pro}>
-          <img src={Logo} className={Css.logo} alt="" />
-          <p>
-            <span
-              style={{
-                color: "rgb(253, 104, 104)",
-                fontSize: "24px",
-                fontWeight: "bolder",
-              }}
-            >
-              Santo
-            </span>{" "}
-            service LLC
-          </p>
-        </div>
+        <Link className={Css.link} to="/home">
+          <div className={Css.pro}>
+            <img src={Logo} className={Css.logo} alt="" />
+            <p>
+              <span
+                style={{
+                  color: "rgb(253, 104, 104)",
+                  fontSize: "24px",
+                  fontWeight: "bolder",
+                }}
+              >
+                Santo
+              </span>{" "}
+              service LLC
+            </p>
+          </div>
+        </Link>
         <div className={Css.menu}>
           <ul>
             <Link className={Css.link} to="/home">
