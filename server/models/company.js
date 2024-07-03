@@ -1,24 +1,27 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class Company extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
-    }
-  }
-  Company.init({
-    title: DataTypes.STRING,
-    createdAt: DataTypes.DATE
-  }, {
-    sequelize,
-    modelName: 'Company',
-  });
-  return Company;
-};
+const { DataTypes } = require("sequelize");
+const { sequelize } = require("../config/dbconnect");
+
+const Company = sequelize.define("Companies", {
+  name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  register: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  createdAt: {
+    type: DataTypes.DATE,
+    allowNull: true,
+    field: "createdAt",
+  },
+});
+
+// Example hook usage (replace with appropriate hook)
+Company.addHook("beforeCreate", (company, options) => {
+  console.log("Before create hook executed");
+});
+
+module.exports = Company;

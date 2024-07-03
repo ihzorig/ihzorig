@@ -19,6 +19,7 @@
   align-items: center;
   border: none;
   padding: 0;
+  background-color: transparent;
   margin: 0;
 }
 .search .input::placeholder {
@@ -42,7 +43,9 @@
   height: 60px;
   padding: 10px 50px;
   justify-content: space-between;
-  box-shadow: 1px 1px 8px rgb(223, 223, 223);
+  /* box-shadow: 1px 1px 8px rgb(223, 223, 223);   */
+  background-color: #1d181c;
+  color: white;
 }
 .options {
   width: fit-content;

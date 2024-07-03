@@ -48,7 +48,7 @@ const Product = () => {
           </div>
           <div className={Css.useradj}>
             <p>Барааны дэлгэрэнгүй</p>
-            <div className={Css.adduser}>Хэрэглэгч бүртгэх</div>
+            <div className={Css.adduser}>Бараа бүртгэх</div>
           </div>
         </div>
         <div className={Css.table}>
@@ -151,7 +151,7 @@ const Product = () => {
                     {" "}
                     <img width={12} src={Delete} alt="" />
                     Устгах
-                  </div>
+                  </div>{" "}
                   <div
                     style={{
                       display: "flex",
@@ -174,7 +174,19 @@ const Product = () => {
                     }}
                   >
                     <img className={Css.addimg} width={12} src={add} alt="" />
-                    Эрх нэмэх
+                    Шилжүүлэх
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <img className={Css.addimg} width={12} src={add} alt="" />
+                    Актлах
                   </div>
                 </td>
               </tr>
@@ -234,7 +246,19 @@ const Product = () => {
                     }}
                   >
                     <img className={Css.addimg} width={12} src={add} alt="" />
-                    Эрх нэмэх
+                    Шилжүүлэх
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "5px",
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <img className={Css.addimg} width={12} src={add} alt="" />
+                    Актлах
                   </div>
                 </td>
               </tr>

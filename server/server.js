@@ -6,6 +6,7 @@ require("colors");
 
 //routes
 const companyRoutes = require("./routes/company");
+const officeRoutes = require("./routes/offices");
 
 dotenv.config({ path: "./config/config.env" });
 
@@ -17,7 +18,8 @@ dbconnect();
 
 app.use(express.json());
 app.use(cors());
-app.use("/api/v1/company", companyRoutes);
+app.use("/api/v1/companies", companyRoutes);
+app.use("/api/v1/offices", officeRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`.rainbow.bold);

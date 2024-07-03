@@ -47,7 +47,7 @@ const Action = () => {
             </div>
           </div>
           <div className={Css.useradj}>
-            <p>Актыг дэлгэрэнгүй</p>
+            <p>Актын дэлгэрэнгүй</p>
             <div className={Css.adduser}>Актыг Засах</div>
           </div>
         </div>

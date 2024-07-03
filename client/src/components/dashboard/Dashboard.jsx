@@ -252,8 +252,6 @@ const Dashboard = () => {
             <table>
               <thead>
                 <tr className={Css.titles}>
-                  <th>Компани</th>
-                  <th>Албан тушаал</th>
                   <th>Овог</th>
                   <th>Нэр</th>
                   <th>Утас</th>
@@ -262,34 +260,24 @@ const Dashboard = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Santo Service LLC</td>
-                  <td>
-                    <p>Админ</p>
-                  </td>
                   <td>Оюундалай</td>
                   <td>Ихзориг</td>
                   <td>94442911</td>
                   <td>karaylaihzorig@gmail.com</td>
                 </tr>
                 <tr>
-                  <td>Santo Service LLC</td>
-                  <td>Админ</td>
                   <td>Оюундалай</td>
                   <td>Ихзориг</td>
                   <td>94442911</td>
                   <td>karaylaihzorig@gmail.com</td>
                 </tr>
                 <tr>
-                  <td>Santo Service LLC</td>
-                  <td>Админ</td>
                   <td>Оюундалай</td>
                   <td>Ихзориг</td>
                   <td>94442911</td>
                   <td>karaylaihzorig@gmail.com</td>
                 </tr>
                 <tr>
-                  <td>Santo Service LLC</td>
-                  <td>Админ</td>
                   <td>Оюундалай</td>
                   <td>Ихзориг</td>
                   <td>94442911</td>

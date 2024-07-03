@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.box {
+  width: 700px;
+  height: 800px;
+}
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.body {
+  padding: 20px 50px;
+}
+.body div {
+  display: flex;
+  gap: 20px;
+  font-family: "roboto";
+  justify-content: space-between;
+}
+.body div input {
+  width: 400px;
+}
