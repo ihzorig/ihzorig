@@ -15,21 +15,21 @@ exports.createCompany = async (req, res) => {
 
     if (existingCompany) {
       return res.status(400).json({
-           success:false, 
-           error: "Энэ компани нэр бүртгэгдсэн байна." 
-          });
+        success: false,
+        error: "Энэ компани нэр бүртгэгдсэн байна.",
+      });
     }
     let isCompany = await Company.findOne({ where: { register } });
-    if(isCompany){
+    if (isCompany) {
       return res.status(400).json({
-        success:false,
-        error:"Ригестрийн дугаар бүртгэлтэй байна."
-      })
+        success: false,
+        error: "Ригестрийн дугаар бүртгэлтэй байна.",
+      });
     }
 
     const newCompany = await Company.create({
       name: name,
-      register:register,
+      register: register,
       createdAt: new Date(),
     });
 
@@ -45,25 +45,23 @@ exports.createCompany = async (req, res) => {
     });
   }
 };
-module.exports.getCompanies = async (req,res)=>{
-  try{
-
-    const companies = await Company.findAll()
-    if(!companies){
+module.exports.getCompanies = async (req, res) => {
+  try {
+    const companies = await Company.findAll();
+    if (!companies) {
       return res.status(404).json({
-        success:false,
-        error:"Бүртгэлтэй компани байхгүй байна."
-      })
+        success: false,
+        error: "Бүртгэлтэй компани байхгүй байна.",
+      }); 
     }
     return res.status(200).json({
-      success:true,
-      data:companies
-    })
-
-  }catch(err){
+      success: true,
+      data: companies,
+    });
+  } catch (err) {
     req.status(500).json({
-      success:false,
-      err
-    })
+      success: false,
+      err,
+    });
   }
-}
+};
